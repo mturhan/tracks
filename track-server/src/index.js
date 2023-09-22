@@ -13,8 +13,7 @@ app.use(bodyParser.json());
 app.use(authRoutes);
 app.use(trackRoutes);
 
-const mongoUri =
-  "mongodb+srv://murat:123qweasd@cluster0.vlbcs2u.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const mongoUri = "MONGOURI";
 
 if (!mongoUri) {
   throw new Error(
